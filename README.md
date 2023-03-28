@@ -1,0 +1,2 @@
+# somours-cli
+project tempalte
