@@ -1,0 +1,47 @@
+// 省略号
+@mixin text-ellipsis($width: 100%) {
+  width: $width;
+  overflow: hidden;
+  white-space: nowrap;
+  word-wrap: normal;
+  text-overflow: ellipsis;
+}
+// 文本换行
+@mixin text-wrap() {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+// 定位居中
+@mixin center() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @content;
+}
+// 盒子内容居中
+@mixin box-center {
+  @include flex-box;
+  align-items: center;
+  justify-content: center;
+  @content;
+}
+
+// 移动端1像素写法
+@mixin one-pix-line($pos: 'bottom', $color: $--border-color, $style: solid) {
+  $prop: border-#{$pos};
+  @if $pos == 'all' {
+    $prop: border;
+  }
+  #{$prop}: 1px $style $color;
+  @media (min-resolution: 2dppx) {
+    #{$prop}: .5px $style $color;
+  }
+  @media (min-resolution: 3dppx) {
+    #{$prop}: .333333px $style $color;
+  }
+  @media (min-resolution: 4dppx) {
+    #{$prop}: .25px $style $color;
+  }
+}

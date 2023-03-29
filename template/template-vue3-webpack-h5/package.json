@@ -1,0 +1,46 @@
+{
+  "name": "template-vue3-webpack-h5",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve --mode development",
+    "build:dev": "vue-cli-service build --mode dev",
+    "build:test": "vue-cli-service build --mode test",
+    "build:prod": "vue-cli-service build --mode production",
+    "build:pressure": "vue-cli-service build --mode pressure",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@vueuse/core": "^9.13.0",
+    "axios": "^0.25.0",
+    "core-js": "^3.8.3",
+    "crypto-js": "^4.1.1",
+    "js-md5": "^0.7.3",
+    "postcss-pxtorem": "^6.0.0",
+    "vant": "^4.0.11",
+    "vue": "^3.2.13",
+    "vue-router": "^4.0.3"
+  },
+  "devDependencies": {
+    "@types/js-md5": "^0.7.0",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-typescript": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "@vue/eslint-config-typescript": "^9.1.0",
+    "amfe-flexible": "^2.2.1",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "lib-flexible": "^0.3.2",
+    "prettier": "^2.4.1",
+    "sass": "^1.58.3",
+    "sass-loader": "^10.0.1",
+    "typescript": "~4.5.5",
+    "unplugin-vue-components": "^0.24.1"
+  }
+}

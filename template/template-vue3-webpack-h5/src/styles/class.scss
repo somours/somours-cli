@@ -1,0 +1,85 @@
+.height-100 {
+  height: 100%
+}
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.align-item-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left !important;
+}
+.ft-lt {
+  float: left;
+}
+
+.ft-rt {
+  float: right;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// 禁止浏览器选择
+.no-select {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently */
+}
+
+@for $i from 1 through 30{
+  .p-t-#{$i} {
+    padding-top: #{$i}px;
+  }
+  .p-b-#{$i} {
+    padding-bottom: #{$i}px;
+  }
+  .p-l-#{$i} {
+    padding-left: #{$i}px;
+  }
+  .p-r-#{$i} {
+    padding-right: #{$i}px;
+  }
+  .m-t-#{$i} {
+    margin-top: #{$i}px;
+  }
+  .m-b-#{$i} {
+    margin-bottom: #{$i}px;
+  }
+  .m-l-#{$i} {
+    margin-left: #{$i}px;
+  }
+  .m-r-#{$i} {
+    margin-right: #{$i}px;
+  }
+  .padding-#{$i} {
+    padding: #{$i}px;
+  }
+  .margin-#{$i} {
+    margin: #{$i}px;
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "somours-cli",
+  "version": "1.0.0",
+  "description": "project template cli",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/somours/somours-cli.git"
+  },
+  "keywords": [
+    "cli",
+    "template"
+  ],
+  "author": "somours",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/somours/somours-cli/issues"
+  },
+  "homepage": "https://github.com/somours/somours-cli#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "fs-extra": "^11.1.1",
+    "kolorist": "^1.7.0",
+    "minimist": "^1.2.8",
+    "prompts": "^2.4.2"
+  }
+}
